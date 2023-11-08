@@ -8,9 +8,14 @@ function increment() {
     countEl.textContent = count
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
+function decrement() {
+    count -= 1
+    countEl.textContent = count
+}
+
+function summary() {
+    let countStr = "You have seen" + count + "today" 
+    saveEl.textContent = countStr
     countEl.textContent = 0
     count = 0
 }
